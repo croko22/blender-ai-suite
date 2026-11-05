@@ -5,23 +5,28 @@
 A personal workshop for learning Blender with AI, collecting reusable skills,
 and taking models into Three.js, Roblox, and other development projects.
 
-This repository starts with documentation and a place to import skills.
-It is not a Blender addon, an installed skill pack, or an automated export tool.
+This repository contains workflow guides, prompt templates, and five imported
+agent skills. It is not a Blender addon or an automated export tool; skill
+activation and a working Blender connection depend on your AI client.
 
 ## Start here
 
 1. [Connect Blender to your AI tools](docs/getting-started.md).
-2. [Follow the modeling workflow](docs/modeling-workflow.md).
-3. [Export assets for Three.js or Roblox](docs/exporting.md).
-4. [Import your own skills](skills/README.md).
+2. [Turn a reference into a visual brief](docs/reference-to-prompt.md).
+3. [Follow the modeling workflow](docs/modeling-workflow.md) using the
+   [copy-paste prompts](docs/prompt-library.md).
+4. [Export assets for Three.js or Roblox](docs/exporting.md).
+
+Keep the [best-practices checklist](docs/best-practices.md) nearby; browse the
+[skill index](skills/README.md) when choosing a capability.
 
 ## Repository map
 
 | Location | Purpose |
 | --- | --- |
 | [`docs/`](docs/README.md) | Setup, modeling, and export guides |
-| [`skills/`](skills/README.md) | Reusable skills you import later |
-| [`assets/`](assets/README.md) | Blender sources, textures, previews, and exports |
+| [Skill index](skills/README.md) | Human navigation; canonical skills live in `.agents/skills/` |
+| [`assets/`](assets/README.md) | Conventions for future Blender sources, textures, previews, and exports |
 
 ## First exercise: a fruit scene
 
@@ -36,12 +41,15 @@ replacement for the editable scene.
 
 ## Current scope
 
-- Included: starter documentation and folder conventions.
-- Next: import and review your skills, then add tested example assets.
-- Not included yet: skill implementations, models, scripts, or a demo app.
+- Included: five imported skills with their support files, guides, and prompt templates.
+- Prompt templates are examples, not tested generated assets or runtime guarantees.
+- No models, generated scene examples, standalone project scripts, or demo app are bundled.
+- See the [skill audit](docs/skill-audit.md) for corrections and verification limits.
 
 ## Sharing
 
 No license has been selected yet. Public visibility does not grant an open-source
 license. Record the source and license of third-party skills and assets before
-adding or redistributing them.
+adding or redistributing them. Imported skill notices are in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md); those notices do not select a
+license for the repository as a whole.

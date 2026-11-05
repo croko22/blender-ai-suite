@@ -1,21 +1,28 @@
-# Import your skills here
+# Imported skill index
 
-No skills are installed or bundled yet. This folder is reserved for the skills
-you want to bring into the workshop.
+This directory is a human index, not an install destination. The five canonical
+imports live under `.agents/skills/`; `.claude/skills/` contains relative symlinks
+to the same directories. Follow your client's discovery and activation rules:
+neither layout guarantees automatic loading in every client.
 
-## Suggested layout
+| Skill | Use | Connection |
+| --- | --- | --- |
+| [blender](../.agents/skills/blender/SKILL.md) | General scene inspection and bounded edits | Optional Flue shell bridge |
+| [blender-modeling](../.agents/skills/blender-modeling/SKILL.md) | Geometry and modifiers | Runtime-discovered Blender MCP |
+| [blender-animation](../.agents/skills/blender-animation/SKILL.md) | Keyframes and motion | Runtime-discovered Blender MCP |
+| [blender-rendering](../.agents/skills/blender-rendering/SKILL.md) | Lighting, cameras, and renders | Runtime-discovered Blender MCP |
+| [blender-export](../.agents/skills/blender-export/SKILL.md) | Export preparation and delivery | Runtime-discovered Blender MCP |
 
-```text
-skills/
-  your-skill-name/
-    SKILL.md
-    references/      # Optional supporting documentation
-    scripts/         # Optional executable helpers
-```
+Flue and MCP are separate routes, not two mandatory components. Flue is not an
+MCP server and is not required for the four MCP skills. Discover the available
+tools at runtime rather than assuming a recipe's tool names exist in your client.
+Dedicated materials, wireframe, and reference-calibration skills are not imported.
 
-These are examples, not existing directories or an enforced installer format.
-Follow your AI client's requirements for discovery and activation; placing files
-here does not automatically install them into Blender or your assistant.
+See [connection setup](../docs/getting-started.md), the
+[audit and verification limits](../docs/skill-audit.md), and
+[third-party notices](../THIRD_PARTY_NOTICES.md).
+[skills-lock.json](../skills-lock.json) records imported provenance; local fixes
+are not guaranteed to match upstream hashes.
 
 ## Before importing
 
@@ -26,4 +33,4 @@ here does not automatically install them into Blender or your assistant.
 - Include a small example and an observable way to check success.
 - Record the source URL and imported version or revision for future updates.
 
-After importing, add a link and a one-line purpose here so you can find it later.
+After importing, update this index with a link, purpose, and connection requirement.

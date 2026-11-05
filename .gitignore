@@ -4,6 +4,7 @@
 *.autosave
 
 # Local output and caches
+.atl/
 **/renders/
 **/.cache/
 __pycache__/
